@@ -12,6 +12,12 @@ It looks like Google has made lot of right choices when developing Flatter.
 - Ios & Android are supported out of box
 - Integrations to Firebase are included
 
+And combined with FireBase it all start looking very bringht
+
+- Firebase scales from simple use cases to very complex cloud environments 
+- Firebase includes for messaging, storage and authentication services 
+- Added features for mobile incluce crashlytics
+
 # learning flutter
 
 https://flutter.io/
