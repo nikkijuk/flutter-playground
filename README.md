@@ -20,6 +20,26 @@ And combined with FireBase it all start looking very bright
 
 Development can be done within Andoid studio
 
+# learning dart
+
+https://www.dartlang.org/
+
+## guide
+
+https://www.dartlang.org/guides/language/language-tour
+
+## guidelines
+
+https://www.dartlang.org/guides/language/effective-dart
+
+## codelabs
+
+https://www.dartlang.org/codelabs
+
+## interactive learning tool
+
+https://dartpad.dartlang.org/
+
 # learning flutter
 
 https://flutter.io/
@@ -33,6 +53,8 @@ https://www.manning.com/books/flutter-in-action
 https://eu.udacity.com/course/build-native-mobile-apps-with-flutter--ud905
 
 ## codelabs
+
+https://flutter.io/docs/codelabs
 
 https://codelabs.developers.google.com/?cat=Flutter
 
