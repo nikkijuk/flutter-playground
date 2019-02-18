@@ -72,6 +72,8 @@ https://medium.com/flutter-community/building-flutter-qr-code-generator-scanner-
 
 https://codemagic.io/
 
+https://www.2dimensions.com/about-flare
+
 # learning firebase
 
 https://firebase.google.com/
