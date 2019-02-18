@@ -2,7 +2,7 @@
 
 Ask yourself: is it possinle to create mobile hybrid apps easily? and do they look good? run fast? 
 
-# assumptions
+# general
 
 It looks like Google has made lot of right choices when developing Flatter.
 
@@ -18,7 +18,7 @@ And combined with FireBase it all start looking very bright
 - Firebase includes messaging, storage and authentication services 
 - Added features for mobile incluce crashlytics
 
-Development can be done within Andoid studio
+Development can be done within Andoid studio, but also other IDE's like Visual Studio Code are supported.
 
 # learning dart
 
