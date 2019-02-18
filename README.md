@@ -68,6 +68,10 @@ https://codelabs.developers.google.com/?cat=Flutter
 
 https://medium.com/flutter-community/building-flutter-qr-code-generator-scanner-and-sharing-app-703e73b228d3
 
+## tools
+
+https://codemagic.io/
+
 # learning firebase
 
 https://firebase.google.com/
