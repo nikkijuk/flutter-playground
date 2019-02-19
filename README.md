@@ -2,7 +2,9 @@
 
 Ask yourself: is it possinle to create mobile hybrid apps easily? and do they look good? run fast? 
 
-# general
+# current state of Flutter
+
+Flutter has arrived 1.0 at Dec 2018
 
 It looks like Google has made lot of right choices when developing Flatter.
 
@@ -19,6 +21,22 @@ And combined with FireBase it all start looking very bright
 - Added features for mobile incluce crashlytics
 
 Development can be done within Andoid studio, but also other IDE's like Visual Studio Code are supported.
+
+# future Directions
+
+Flutter should in future expand to other platforms as Android & iOs
+
+One example is Web support, which is in experimental state (Dec 2018)
+
+https://medium.com/flutter-io/hummingbird-building-flutter-for-the-web-e687c2a023a8
+
+Other experimental efforts include support for developing Osx, Windows & Linux desktop applications
+
+https://github.com/google/flutter-desktop-embedding
+
+Flutter is also ported experimentally to Rasperry Pi, which allows Flutter apps to run without host opeting system on low capability environment
+
+https://medium.com/flutter-io/flutter-on-raspberry-pi-mostly-from-scratch-2824c5e7dcb1
 
 # learning dart
 
