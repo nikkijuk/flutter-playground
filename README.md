@@ -1,12 +1,12 @@
 # flutter-playground
 
-Ask yourself: is it possinle to create mobile hybrid apps easily? and do they look good? run fast? 
+Ask yourself: is it possinle to create mobile hybrid apps easily? and do they look good? run fast? are cool & hip?
 
 # current state of Flutter
 
 Flutter has arrived 1.0 at Dec 2018
 
-It looks like Google has made lot of right choices when developing Flatter.
+It looks like Google has made lot of right choices when developing Flutter.
 
 - Flutter uses Dart as programming language
 - Dart is statically typed, but feels familiar to javascript programmers 
@@ -14,13 +14,20 @@ It looks like Google has made lot of right choices when developing Flatter.
 - Ios & Android are supported out of box
 - Integrations to Firebase are included
 
-And combined with FireBase it all start looking very bright
+And combined with FireBase it all starts looking very bright.
 
 - Firebase scales from simple use cases to very complex cloud environments 
 - Firebase includes messaging, storage and authentication services 
 - Added features for mobile incluce crashlytics
 
 Development can be done within Andoid studio, but also other IDE's like Visual Studio Code are supported.
+
+There are also interesting integrations also.
+
+- Stripe has integrations to allow payment on mobile devices
+- 2Dimensions has developed Flare to model vertor graphics, for which Flutter has player plugin
+
+It's quite propable that there's more to come as platform matures.
 
 # future Directions
 
