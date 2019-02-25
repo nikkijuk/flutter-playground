@@ -49,9 +49,9 @@ https://medium.com/flutter-io/flutter-on-raspberry-pi-mostly-from-scratch-2824c5
 
 All installed components which flutter uses or needs eat up something like 3 - 4 gb disk, if not even more.
 
-Intallation takes also some time (30 – 45 min, depending on internet & memory & processor)– so: be patient
+Installation takes also some time (30 – 45 min, depending on internet & memory & processor)– so: be patient
 
-Istall Flutter SDK (> 700 kb)
+Install Flutter SDK (> 700 kb)
 -	https://flutter.dev/docs/get-started/install
 
 Install Android Studio (> 1.6 gb)
