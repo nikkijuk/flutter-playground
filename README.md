@@ -1,6 +1,6 @@
 # flutter-playground
 
-Ask yourself: is it possinle to create mobile hybrid apps easily? and do they look good? run fast? are cool & hip?
+Ask yourself: is it possible to create mobile hybrid apps easily? and do they look good? run fast? are cool & hip?
 
 # current state of Flutter
 
@@ -44,6 +44,40 @@ https://github.com/google/flutter-desktop-embedding
 Flutter is also ported experimentally to Rasperry Pi, which allows Flutter apps to run without host opeting system on low capability environment
 
 https://medium.com/flutter-io/flutter-on-raspberry-pi-mostly-from-scratch-2824c5e7dcb1
+
+# installation
+
+All installed components which flutter uses or needs eat up something like 3 - 4 gb disk, if not even more.
+
+Intallation takes also some time (30 – 45 min, depending on internet & memory & processor)– so: be patient
+
+Istall Flutter SDK (> 700 kb)
+-	https://flutter.dev/docs/get-started/install
+
+Install Android Studio (> 1.6 gb)
+-	https://flutter.dev/docs/get-started/editor
+
+Install android sdk + emulator + tools by opening android studio (> 2 gb)
+-	https://flutter.dev/docs/get-started/install/macos#set-up-the-android-emulator
+
+add dart and flutter plugins to android studio 
+-	https://flutter.dev/docs/get-started/editor
+
+Check installation with flutter doctor 
+-	Flutter-doctor
+
+Accept licences with flutter-doctor
+-	flutter doctor --android-licenses
+
+# first application
+
+create new emptry project with Wizard from opening screen of Android Studio – try to open emulator – deploy your app there 
+
+-	use scaffolding sample code
+-	start emulator
+-	run app
+
+if you're lucky all works now
 
 # learning dart
 
