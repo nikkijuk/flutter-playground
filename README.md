@@ -81,11 +81,25 @@ if you're lucky all works now
 
 # learning dart
 
+    main() => print('Hello, World!');
+
+Dart looks familiar to developers coming from Java, JS, C/C++/C# and .. It's statically typed language and supports both functional and object oriented styles of programming. With Flutter Dart is compiled to native code just-in-time or ahead-of-time. So, fast development, but simulaneously efficently compilation for production. 
+
 https://www.dartlang.org/
 
-## guide
+Let's see from example how classes, methods, properties and inheritance are expressed -- it should all look familiar if you have used any OO language. 
+
+http://jpryan.me/dartbyexample/examples/inheritance/
+
+It should be noted that there's two versions of Dart. 1.X and 2.X are close to each other, but not same. For example new is in Dart 2.X optional when creating object and mandatory in Dart 1.x.
+
+https://www.dartlang.org/dart-2
+
+## guides
 
 https://www.dartlang.org/guides/language/language-tour
+
+http://jpryan.me/dartbyexample/
 
 ## guidelines
 
@@ -93,11 +107,17 @@ https://www.dartlang.org/guides/language/effective-dart
 
 ## codelabs
 
+If you are Java programmer this should help you
+
+- Intro to Dart for Java Developers 
+
 https://www.dartlang.org/codelabs
 
 ## interactive learning tool
 
 https://dartpad.dartlang.org/
+
+## tools
 
 # learning flutter
 
@@ -113,15 +133,14 @@ https://eu.udacity.com/course/build-native-mobile-apps-with-flutter--ud905
 
 ## codelabs
 
-https://flutter.io/docs/codelabs
+Work codelabs thru in this order. If you are experience Android developer they might feel easy. Otherwise you need some time and patience.
 
-https://codelabs.developers.google.com/?cat=Flutter
-
-- Building Beautiful UIs with Flutter
-- Firebase for Flutter
 - Write Your First Flutter App, part 1
 - Write Your First Flutter App, part 2
-- Intro to Dart for Java Developers 
+- Building Beautiful UIs with Flutter
+- Firebase for Flutter
+
+https://flutter.io/docs/codelabs
 
 ## articles
 
@@ -129,9 +148,19 @@ https://medium.com/flutter-community/building-flutter-qr-code-generator-scanner-
 
 ## tools
 
+Flutter can be plugged to hosted Continous Integration tool, which is able to produce and publish Flutter apps to Google App Store and Apple App Store with single button click. You don't even need to have Apple hardware and Xcode locally installed to produce iPhone app!
+
 https://codemagic.io/
 
+Free animations? Yep. And flutter has plyer for them. Sample app is available with name "the history of everything".
+
 https://www.2dimensions.com/about-flare
+
+https://medium.com/2dimensions/the-history-of-everything-981d989e1b45
+
+How cool is open source? Swagger codegen for Dart is working with Flutter as one person felt implementing needed changes important enough. 
+
+https://github.com/swagger-api/swagger-codegen/pull/7418
 
 # learning firebase
 
