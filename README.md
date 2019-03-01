@@ -158,9 +158,13 @@ https://www.2dimensions.com/about-flare
 
 https://medium.com/2dimensions/the-history-of-everything-981d989e1b45
 
-How cool is open source? Swagger codegen for Dart is working with Flutter as one person felt implementing needed changes important enough. 
+How cool is open source? Swagger codegen for Dart is working with Flutter as one person felt implementing needed changes important enough. Think of it: If you want to generate apis for your Magento ecommerce site you just get Magentos swagger definitions, generate Dart code for your Flutter app and start calling Magentos rest api from your code. 
 
 https://github.com/swagger-api/swagger-codegen/pull/7418
+
+https://swagger.io/tools/swagger-codegen/
+
+https://devdocs.magento.com/swagger/
 
 # learning firebase
 
