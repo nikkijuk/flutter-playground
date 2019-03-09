@@ -75,7 +75,7 @@ I used Ideas Terminal Tab to type in exactly these commands.
     931db5fb9106        phpmyadmin/phpmyadmin   "/run.sh supervisord…"   5 hours ago         Up 5 hours          9000/tcp, 0.0.0.0:8580->80/tcp   docker-magento2_phpmyadmin_1
     053ded4d9768        mysql:5.6.23            "/entrypoint.sh mysq…"   5 hours ago         Up 5 hours          3306/tcp                         docker-magento2_db_1
 
-    $ docker exec -it 64a640ec15a1 install-magento # note that alexcheng/magento2 container is used to execute command
+    $ docker exec -it 64a640ec15a1 install-magento # 64a640ec15a1 container (alexcheng/magento2) executes command
 
     $ docker exec -it 64a640ec15a1 install-sampledata # sample data added    
 
