@@ -54,6 +54,37 @@ Magento official
 
 Selection criteria: easiest setup with usable test data for our test case. Or just pick first that works. See that it was updated frequently.
 
+## magento & docker compose recipe
+
+I decided to give try to alex chengs docker images for magento 2. Winning points: lot of users, test data provided
+- https://github.com/alexcheng1982/docker-magento2
+
+Instructions are good, but let's recap. Recipe starts from point when whole repository has been fetched with git client to local workspace. 
+I used IntelliJ Idea to get sources, but Android Studio would go as well. 
+Docker compose was already installed as part of Docker Desktop for Mac.
+I used Ideas Terminal Tab to type in exactly these commands. 
+
+    $ docker-compose up -d # builds images and strarts them
+
+    $ docker container ls # lists containers running and images they are based
+    
+    CONTAINER ID        IMAGE                   COMMAND                  CREATED             STATUS              PORTS                            NAMES
+    64a640ec15a1        alexcheng/magento2      "/sbin/my_init"          5 hours ago         Up 5 hours          0.0.0.0:80->80/tcp               docker-magento2_web_1
+    931db5fb9106        phpmyadmin/phpmyadmin   "/run.sh supervisord…"   5 hours ago         Up 5 hours          9000/tcp, 0.0.0.0:8580->80/tcp   docker-magento2_phpmyadmin_1
+    053ded4d9768        mysql:5.6.23            "/entrypoint.sh mysq…"   5 hours ago         Up 5 hours          3306/tcp                         docker-magento2_db_1
+
+    $ docker exec -it 64a640ec15a1 install-magento # note that alexcheng/magento2 container is used to execute command
+
+    $ docker exec -it 64a640ec15a1 install-sampledata # sample data added    
+
+    $ sudo nano /etc/hosts # added local.magento as host to osx's condiguration file
+    
+    127.0.0.1       local.magento
+
+And then I opened in browser http://local.magento and surprise surprise my shop was there. 
+I now have shop running on my local mbp 2017, 16 gb, box. 
+My new shop isn't really fast, but hey: it's all running in 4-core i7 laptop. 
+
 # swagger
 
 Dart generation with swagger codegen in documented here
