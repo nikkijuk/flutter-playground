@@ -59,9 +59,11 @@ Selection criteria: easiest setup with usable test data for our test case. Or ju
 I decided to give try to alex chengs docker images for magento 2. Winning points: lot of users, test data provided
 - https://github.com/alexcheng1982/docker-magento2
 
-Instructions are good, but let's recap. Recipe starts from point when whole repository has been fetched with git client to local workspace. 
-I used IntelliJ Idea to get sources, but Android Studio would go as well. 
 Docker compose was already installed as part of Docker Desktop for Mac.
+- https://www.docker.com/products/docker-desktop
+
+Recipe starts from point when whole repository has been fetched with git client to local workspace. 
+I used IntelliJ Idea to get sources, but Android Studio would go as well. 
 I used Ideas Terminal Tab to type in exactly these commands. 
 
     $ docker-compose up -d # builds images and strarts them
@@ -83,7 +85,10 @@ I used Ideas Terminal Tab to type in exactly these commands.
 
 And then I opened in browser http://local.magento and surprise surprise my shop was there. 
 I now have shop running on my local mbp 2017, 16 gb, box. 
-My new shop isn't really fast, but hey: it's all running in 4-core i7 laptop. 
+My new shop      isn't really fast, but hey: it's all running in 4-core i7 laptop. 
+
+BTW. If you don't want to install Idea or Android Studio, but want to use fancy tools to get sources just use Sourcetree.
+- https://www.sourcetreeapp.com/
 
 # swagger
 
