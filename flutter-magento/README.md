@@ -62,9 +62,10 @@ I decided to give try to alex chengs docker images for magento 2. Winning points
 Docker compose was already installed as part of Docker Desktop for Mac.
 - https://www.docker.com/products/docker-desktop
 
-Recipe starts from point when whole repository has been fetched with git client to local workspace. 
+Whole repository needs to be fetched with git client to local workspace. 
 I used IntelliJ Idea to get sources, but Android Studio would go as well. 
-I used Ideas Terminal Tab to type in exactly these commands. 
+
+I used Ideas Terminal Tab to type in exactly these commands at root directory of sources. 
 
     $ docker-compose up -d # builds images and starts them
 
@@ -83,15 +84,57 @@ I used Ideas Terminal Tab to type in exactly these commands.
     
     127.0.0.1       local.magento
 
-At that point I opened http://local.magento with browser and surprise surprise my shop was there. 
+At that point I opened magento, and surprise surprise my shop was there. 
+- http://local.magento
 
-What if I'd need to change configuration or want to start again from clean state? Just made needed changes to images and rebuild.
+It's pretty interesting to see admin ui, but for this I need password, which is stored at environment.
+
+    $ docker exec -it 462a673efb94 env # find environment variables 
+    
+    MAGENTO_ADMIN_USERNAME=admin
+    MAGENTO_ADMIN_PASSWORD=magentorocks1
+
+We can see that admin ui works with admin user and proper password
+- http://local.magento/admin
+
+Now it's time to check if rest api functions. Let's start with oauth authentication token.
+- https://devdocs.magento.com/guides/v2.3/rest/tutorials/orders/order-admin-token.html
+
+Tasks to do is to give admin username and password in json body of http post request to get OAUTH token. 
+
+    $ curl -i -X POST -H "Content-Type: application/json" -d '{"username":"admin","password":"magentorocks1"}' http://local.magento/rest/default/V1/integration/admin/token
+
+    "h51a2pzjftle1sukfh2xzx6h6a1tsr5y"
+
+Call should return token to you. Now test that credentials work by fetching store config. 
+
+    $ curl -i -X GET -H "Content-Type: application/json" -H "Authorization: Bearer h51a2pzjftle1sukfh2xzx6h6a1tsr5y"  http://local.magento/rest/default/V1/store/storeConfigs
+
+    <return configuration as json or authorization error if oauth token has timed out>
+
+One could use Postman here instead of curl, in which case exporting open api definitions to Postman makes experimenting simple.
+- https://blog.getpostman.com/2018/12/11/postman-supports-openapi-3-0/
+
+If you wondered how to know right url see your local API definitions 
+- https://devdocs.magento.com/guides/v2.3/rest/generate-local.html
+- http://local.magento/swagger/
+
+Or see developer documentation 
+- https://devdocs.magento.com/
+
+And API documentation of latest Magento version
+- https://devdocs.magento.com/swagger/
+
+After all this experimenting it's time for shutdown
 
     $ docker-compose down # stop all
 
-    $ docker-compose up -build -d # rebuilds images and starts them
+But wait: What if I'd need to change configuration or want to start again from clean state? 
+Just made needed changes to images and rebuild.
 
-Also test data and installation needs to be initialized again, but as said this is not big deal.
+    $ docker-compose up --build -d # rebuilds images and starts them
+
+After each start of containers test data and installation needs to be initialized again, but as said this is not big deal.
 
 I now have shop running on my local mbp 2017, 16 gb, box. My new shop isn't really fast, but hey: it's all running in 4-core i7 laptop. 
 
