@@ -66,7 +66,7 @@ Recipe starts from point when whole repository has been fetched with git client 
 I used IntelliJ Idea to get sources, but Android Studio would go as well. 
 I used Ideas Terminal Tab to type in exactly these commands. 
 
-    $ docker-compose up -d # builds images and strarts them
+    $ docker-compose up -d # builds images and starts them
 
     $ docker container ls # lists containers running and images they are based
     
@@ -83,9 +83,17 @@ I used Ideas Terminal Tab to type in exactly these commands.
     
     127.0.0.1       local.magento
 
-And then I opened in browser http://local.magento and surprise surprise my shop was there. 
-I now have shop running on my local mbp 2017, 16 gb, box. 
-My new shop      isn't really fast, but hey: it's all running in 4-core i7 laptop. 
+At that point I opened http://local.magento with browser and surprise surprise my shop was there. 
+
+What if I'd need to change configuration or want to start again from clean state? Just made needed changes to images and rebuild.
+
+    $ docker-compose down # stop all
+
+    $ docker-compose up -build -d # rebuilds images and starts them
+
+Also test data and installation needs to be initialized again, but as said this is not big deal.
+
+I now have shop running on my local mbp 2017, 16 gb, box. My new shop isn't really fast, but hey: it's all running in 4-core i7 laptop. 
 
 BTW. If you don't want to install Idea or Android Studio, but want to use fancy tools to get sources just use Sourcetree.
 - https://www.sourcetreeapp.com/
