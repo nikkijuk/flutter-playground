@@ -24,6 +24,8 @@ There are some test projects similar to this one
 
 It might be good idea to try these projects before going forward with own implementation.
 
+NOTES: didn't manage to get "troublediehard/magento-flutter" test project to function - for some reason same call which did work with curl (to get configuration from magento2) didn't work from flutter -- hmm.. 
+
 # magento
 
 Use latest Magento 2.X.
